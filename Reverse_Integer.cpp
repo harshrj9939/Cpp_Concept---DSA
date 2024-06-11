@@ -10,7 +10,6 @@ public:
         while (x != 0) {
             int digit = x % 10;
 
-            // Check for overflow/underflow before updating ans
             if (ans > INT_MAX / 10 || (ans == INT_MAX / 10 && digit > 7)) {
                 return 0;
             }
