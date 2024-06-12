@@ -21,7 +21,7 @@ class Solution{
 };
 int main() {
     Solution sol;
-    vector<int> nums = {2, 7, 11,, 16 15};
+    vector<int> nums = {2, 7, 11, 16, 15};
     int target = 22;
     vector<int> result = sol.twoSum(nums, target);
     if (!result.empty()) {
