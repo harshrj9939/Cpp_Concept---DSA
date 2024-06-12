@@ -12,7 +12,7 @@ class Solution{
         for(int i =0; i<n; i++){
             int remaining = target - nums[i];
         if(map.find(remaining)!=map.end()){
-            return {map[remaining], 1};
+            return {map[remaining], i};
         }
         map[nums[i]]=i;
     }
@@ -21,10 +21,10 @@ class Solution{
 };
 int main() {
     Solution sol;
-    vector<int> nums = {2, 7, 11, 15};
-    int target = 13;
+    vector<int> nums = {2, 7, 11,, 16 15};
+    int target = 22;
     vector<int> result = sol.twoSum(nums, target);
-    if (result[0] != -1 && result[1] != -1) {
+    if (!result.empty()) {
         cout << "Indices: " << result[0] << " " << result[1] << endl;
     } else {
         cout << "No solution found." << endl;
