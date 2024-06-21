@@ -23,12 +23,9 @@ public:
         } else {
             ans = "equal";
         }
-
         return ans;
     }
 };
-
-
 
 int main() {
     Solution ob;
