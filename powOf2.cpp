@@ -4,10 +4,9 @@ using namespace std;
 
 class Solution {
   public:
-    // Function to check if given number n is a power of two.
+   
     bool isPowerofTwo(long long n) {
 
-        // Your code here
         while(n>1 && n%2==0){
             n=n/2;
             
@@ -23,12 +22,11 @@ int main() {
     cin >> t;
 
     for (int i = 0; i < t; i++) {
-        long long n; // input a number n
+        long long n;
         cin >> n;
         
         Solution ob;
-        if (ob.isPowerofTwo(n)) // Now, if log2 produces an integer not decimal then we
-                                // are sure raising 2 to this value
+        if (ob.isPowerofTwo(n)) 
             cout << "true" << endl;
         else
             cout << "false" << endl;
