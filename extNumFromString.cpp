@@ -1,13 +1,5 @@
-//{ Driver Code Starts
-// Initial Template for C++
-
 #include <bits/stdc++.h>
 using namespace std;
-
-
-// } Driver Code Ends
-// User function Template for C++
-
 
 class Solution {
   public:
@@ -31,8 +23,6 @@ class Solution {
     }
 };
 
-
-//{ Driver Code Starts.
 int main() {
 
     ios_base::sync_with_stdio(0);
@@ -53,5 +43,3 @@ int main() {
 
     return 0;
 }
-
-// } Driver Code Ends
