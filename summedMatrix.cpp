@@ -4,7 +4,7 @@ using namespace std;
 class Solution {
   public:
     long long sumMatrix(long long n, long long q) {
-        // code here
+        
         if(q>2*n || q<2)
         return 0;
         if(q+1<=n)
