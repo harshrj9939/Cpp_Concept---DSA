@@ -1,13 +1,7 @@
-// find the no of triangle in a circle
-//{ Driver Code Starts
-// Initial Template for C++
 
 #include <bits/stdc++.h>
 using namespace std;
 
-
-// } Driver Code Ends
-// User function Template for C++
 
 class Solution {
   public:
@@ -24,7 +18,6 @@ class Solution {
     }
 };
 
-//{ Driver Code Starts.
 int main() {
     int t;
     cin >> t;
@@ -36,4 +29,3 @@ int main() {
         cout << ans << "\n";
     }
 }
-// } Driver Code Ends

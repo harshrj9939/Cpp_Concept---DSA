@@ -1,5 +1,3 @@
-// Longest Common Prefix
-
 #include <iostream>
 #include <vector>
 #include <string>
