@@ -1,4 +1,3 @@
-
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -19,8 +18,7 @@ Node *buildTree(string str) {
     if (str.length() == 0 || str[0] == 'N')
         return NULL;
 
-    // Creating vector of strings from input
-    // string after spliting by space
+    // Creating vector of strings from input string after splitting by space
     vector<string> ip;
 
     istringstream iss(str);
@@ -37,7 +35,6 @@ Node *buildTree(string str) {
     // Starting from the second element
     int i = 1;
     while (!queue.empty() && i < ip.size()) {
-
         // Get and remove the front of the queue
         Node *currNode = queue.front();
         queue.pop();
@@ -47,10 +44,8 @@ Node *buildTree(string str) {
 
         // If the left child is not null
         if (currVal != "N") {
-
             // Create the left child for the current node
             currNode->left = new Node(stoi(currVal));
-
             // Push it to the queue
             queue.push(currNode->left);
         }
@@ -63,10 +58,8 @@ Node *buildTree(string str) {
 
         // If the right child is not null
         if (currVal != "N") {
-
             // Create the right child for the current node
             currNode->right = new Node(stoi(currVal));
-
             // Push it to the queue
             queue.push(currNode->right);
         }
@@ -76,37 +69,37 @@ Node *buildTree(string str) {
     return root;
 }
 
-
 class Solution {
   public:
     // Function to find the vertical width of a Binary Tree.
+    int verticalWidth(Node* root) {
+        if (!root) return 0;
+        
         int maxi = 0;
-        int mini= 0;
-        void solve (Node* root, int distance){
-            if(!root)return;
+        int mini = 0;
+        
+        function<void(Node*, int)> solve = [&](Node* root, int distance) {
+            if (!root) return;
             maxi = max(distance, maxi);
             mini = min(distance, mini);
-            solve(root->left, distance-1);
-            solve(root->right, distance+1);
-        }
-        int verticalWidth(Node* root){
-            if(!root) return 0;
-            solve(root, 0);
-            return maxi-mini+1;
-            
+            solve(root->left, distance - 1);
+            solve(root->right, distance + 1);
+        };
+        
+        solve(root, 0);
+        return maxi - mini + 1;
     }
 };
 
-
 int main() {
     int tc;
-    scanf("%d ", &tc);
+    cin >> tc;
+    cin.ignore(); // To ignore the newline character after the number of test cases
     while (tc--) {
         string str;
         getline(cin, str);
         Solution obj;
         Node *root = buildTree(str);
-
         cout << obj.verticalWidth(root) << "\n";
     }
 
