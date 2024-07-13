@@ -33,7 +33,7 @@ public:
         string maxStr = (x > y) ? "ab" : "ba";
         string minStr = (x > y) ? "ba" : "ab";
         
-        // First round: remove the substring that gives the higher
+        // First round: remove the substring that gives the higher score
         int countMaxStr = 0;
         string temp_first = removeSubstr(s, maxStr, countMaxStr);
         score += countMaxStr * max(x, y);
