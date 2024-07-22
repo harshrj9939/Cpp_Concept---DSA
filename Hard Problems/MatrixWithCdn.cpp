@@ -19,7 +19,6 @@ public:
                     inDegree[v]++;
                 }
             }
-
             queue<int> q;
             for (int i = 1; i <= k; ++i) {
                 if (inDegree[i] == 0) {
