@@ -9,8 +9,6 @@ public:
         
         // Start with the first string as the initial prefix
         string prefix = arr[0];
-        
-        
         // Iterate through each string in the array
         for (int i = 1; i < arr.size(); ++i) {
             // Update the prefix by comparing with the current string
@@ -18,7 +16,6 @@ public:
             // If at any point the prefix becomes empty, return "-1"
             if (prefix.empty()) return "-1";
         }
-        
         return prefix;
     }
     
