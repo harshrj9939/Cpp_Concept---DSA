@@ -2,9 +2,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
-// } Driver Code Ends
-
 class Solution {
 public:
     int editDistance(string str1, string str2) {
@@ -28,7 +25,6 @@ public:
 };
 
 
-//{ Driver Code Starts.
 int main() {
     int T;
     cin >> T;
