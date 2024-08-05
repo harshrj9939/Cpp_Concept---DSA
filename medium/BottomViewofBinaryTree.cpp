@@ -25,6 +25,7 @@ Node* buildTree(const string& str) {
         Node* currentNode = q.front();
         q.pop();
 
+
         if (values[i] != "N") {
             currentNode->left = new Node(stoi(values[i]));
             q.push(currentNode->left);
