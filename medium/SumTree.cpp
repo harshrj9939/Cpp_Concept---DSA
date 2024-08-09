@@ -71,6 +71,7 @@ private:
             sum = node->data;
             return true;
         }
+        
 
         int leftSum = 0, rightSum = 0;
         bool left = checkSumTree(node->left, leftSum);
