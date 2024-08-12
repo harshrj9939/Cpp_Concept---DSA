@@ -3,8 +3,6 @@
 #include <vector>
 #include <unordered_set>
 using namespace std;
-
-// Definition for a binary tree node.
 struct TreeNode {
     int val;
     TreeNode *left;
@@ -46,7 +44,6 @@ public:
     }
 };
 
-// Helper function to print the tree nodes in a vector
 void printForest(const vector<TreeNode*>& forest) {
     for (auto tree : forest) {
         printTree(tree);
@@ -54,7 +51,6 @@ void printForest(const vector<TreeNode*>& forest) {
     }
 }
 
-// Helper function to print a single tree (Pre-order traversal)
 void printTree(TreeNode* root) {
     if (!root) return;
     cout << root->val << " ";
