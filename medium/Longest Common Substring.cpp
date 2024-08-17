@@ -24,7 +24,6 @@ public:
     }
 };
 
-// Driver code
 int main() {
     int t;
     cin >> t;
