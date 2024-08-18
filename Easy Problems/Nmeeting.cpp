@@ -3,8 +3,6 @@ using namespace std;
 
 class Solution {
 public:
-    // Function to find the maximum number of meetings that can
-    // be performed in a meeting room.
     int maxMeetings(int n, int start[], int end[]) {
         vector<pair<int, int>> meetings;
         
@@ -13,7 +11,6 @@ public:
             meetings.push_back({end[i], start[i]});
         }
         
-        // Sorting the meetings by end time
         sort(meetings.begin(), meetings.end());
         
         int count = 0; // Number of meetings we can hold
