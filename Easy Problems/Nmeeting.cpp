@@ -18,8 +18,7 @@ public:
         
         // Iterating through the sorted list of meetings
         for (int i = 0; i < n; i++) {
-            // If the start time of the current meeting is greater
-            // than the end time of the last selected meeting
+           
             if (meetings[i].second > last_end_time) {
                 // We can select this meeting
                 count++;
