@@ -10,9 +10,6 @@ class Parent{
 
     private:
     int z;
-    
-    
-
 };
 
 class child1: public Parent{
