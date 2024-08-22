@@ -37,7 +37,6 @@ public:
     }
 };
 
-// Driver code to test the solution
 int main() {
     Solution sol;
     vector<int> test_cases = {123, 12345, 1234567, 0, 1000000};
