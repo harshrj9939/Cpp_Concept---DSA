@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// Tree Node structure
 struct Node {
     int data;
     Node* left;
