@@ -2,9 +2,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
-// } Driver Code Ends
-
 class Solution {
 public:
     vector<int> spirallyTraverse(vector<vector<int>>& matrix) {
@@ -52,8 +49,6 @@ public:
     }
 };
 
-
-//{ Driver Code Starts.
 int main() {
     int t;
     cin >> t;
@@ -69,7 +64,6 @@ int main() {
             }
         }
         
-
         Solution ob;
         vector<int> result = ob.spirallyTraverse(matrix);
         for (int i = 0; i < result.size(); ++i)
